@@ -10,6 +10,10 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: solid grey 1px;
+  position:sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 1;
 }
 .nav__sec__title1 {
   color: #b939d1;
@@ -22,10 +26,13 @@ body {
   width: 60%;
   gap: 5px;
   align-items: center;
+
 }
 .nav__sec__search1 {
   border: none;
   font-size: 16px;
+  background-color: transparent;
+
 }
 .nav__sec__search1:focus {
   outline: none;
@@ -34,6 +41,27 @@ body {
   display: flex;
   gap: 30px;
   align-items: center;
+}
+.mylearning{
+  position: relative;
+  cursor: pointer;
+}
+.mylearning__1{
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 20px;
+  width: 150px;
+  display: none;
+  padding: 15px;
+  /* padding-right: 15px; */
+  text-align: center;
+
+}
+.mylearning:hover .mylearning__1{
+  display: block;
 }
 .categories {
   display: flex;
@@ -47,9 +75,27 @@ body {
   margin: 10px;
   border-radius: 30px;
 }
+.sale__img{
+   position: relative;
+}
 .sale__img img {
   width: 100%;
-
+}
+.notice{
+  background-color: white;
+  width: fit-content;
+  height: 15%;
+  border: solid black 2px;
+  padding: 40px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+.notice h1{
+  padding-left: 10px;
+}
+.notice p{
+  padding-top: 5px;
 }
 .recommend {
   margin: 10px;
